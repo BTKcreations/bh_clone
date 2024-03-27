@@ -124,3 +124,27 @@
 .h1{
   font-family: sans-serif;
 }
+
+
+
+
+
+
+/* title_section */
+.tiles-section{
+  display:flex;
+ justify-content: space-between;
+ transform: translate(0,-30%);
+ background-color:#d7cfc1;
+
+}
+
+.tile {
+  width:399px;
+  height:266.52px;
+ 
+}
+.tile img {
+  height:100%;
+  margin-right:30px;
+}
