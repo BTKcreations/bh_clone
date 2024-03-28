@@ -4,6 +4,19 @@
   margin:0;
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0em;
+  line-height: 1.6em;
+  font-family: baskerville-display-pt;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: .03em;
+  line-height: 1.5em;
+  text-transform: none;
+  color: #363636;
+}
 .nav-bar {
   width:100%;
   height:173px;
@@ -50,17 +63,24 @@
   text-transform: uppercase;
 }
 
+
+
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  width: 100%;
+  height: 100vh;
   position: relative;
   margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
+  min-width: 900px;
+  width: 100%;
+  height: 100vh;
   display: none;
   /* background-blend-mode: color-dodge; */
+  text-align: center;
 }
 
 /* Next & previous buttons */
@@ -111,40 +131,84 @@
 }
 
 
-
-/* 2nd section */
 .parah1{
+  width: 100%;
+  height: auto;
+  position: relative;
   background-color: #d7cfc1;
+  padding: 90px 50px;
 }
-.para{
-  width: 40%;
-  margin: 70px auto 20px;
+.parah1  .textCont{
+  position: relative;
+  max-width: 600px;
+  top: 10px;
+  margin: 30px auto;
+}
+
+.parah1 .textCont p{
+  
   font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: .07em;
+  line-height: 1.8em;
+  text-transform: none;
+  margin: 0 0 13.28px;
+
 }
-.h1{
+.parah1 .textCont h1{
   font-family: sans-serif;
+  color: #333132;
+  font-size: 27px;
+  letter-spacing: 2.5px;
+  margin: 0 0 70px 0;
 }
-
-
-
-
-
 
 /* title_section */
 .tiles-section{
-  display:flex;
- justify-content: space-between;
- transform: translate(0,-30%);
+ display:flex;
+ /* flex-wrap: wrap; */
+ justify-content: space-around;
  background-color:#d7cfc1;
+}
+.tiles-section .tile{
+  position: relative;
+  margin: 10px;
+}
+.tiles-section .tile img{
+  width: 100%;
+  max-width: 700px;
+  min-width: 100px;
+  height: 100%;
+  opacity: 0.7;
+}
+.tiles-section .tile .image-button{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+.tiles-section .tile{
+text-align: center;
+font-weight: 900;
+}
+
+.tiles-section .tile{
 
 }
 
-.tile {
-  width:399px;
-  height:266.52px;
- 
+
+/* IndexPage */
+
+.Index-page{
+  position: relative;
+  overflow: hidden;
+  
 }
-.tile img {
-  height:100%;
-  margin-right:30px;
+.Index-page-content{
+  background-color: #a5b6c1;
+  box-sizing: border-box;
+  padding: 80px 50px;
+  
 }
